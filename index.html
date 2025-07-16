@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>বগুড়া জেলার উপজেলা তালিকা</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 60%;
+      margin: 0 auto 20px;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    tr:hover {
+      background-color: #e0f0ff;
+      cursor: pointer;
+    }
+    iframe {
+      display: block;
+      margin: 20px auto;
+      width: 80%;
+      height: 450px;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>বগুড়া জেলার উপজেলা তালিকা</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ক্রমিক</th>
+        <th>উপজেলার নাম</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="loadUpazila('sadar.html')"><td>১</td><td>বগুড়া সদর</td></tr>
+      <tr onclick="loadUpazila('sherpur.html')"><td>২</td><td>শেরপুর</td></tr>
+      <tr onclick="loadUpazila('shajahanpur.html')"><td>৩</td><td>শাজাহানপুর</td></tr>
+      <tr onclick="loadUpazila('dhunot.html')"><td>৪</td><td>ধুনট</td></tr>
+      <tr onclick="loadUpazila('sariakandi.html')"><td>৫</td><td>সারিয়াকান্দি</td></tr>
+      <tr onclick="loadUpazila('gabtali.html')"><td>৬</td><td>গাবতলী</td></tr>
+      <tr onclick="loadUpazila('shibganj.html')"><td>৭</td><td>শিবগঞ্জ</td></tr>
+      <tr onclick="loadUpazila('sonatola.html')"><td>৮</td><td>সোনাতলা</td></tr>
+      <tr onclick="loadUpazila('nandigram.html')"><td>৯</td><td>নন্দীগ্রাম</td></tr>
+      <tr onclick="loadUpazila('kahalu.html')"><td>১০</td><td>কাহালু</td></tr>
+      <tr onclick="loadUpazila('adamdighi.html')"><td>১১</td><td>আদমদিঘি</td></tr>
+      <tr onclick="loadUpazila('dupchanchia.html')"><td>১২</td><td>ধুপচাঁচিয়া</td></tr>
+    </tbody>
+  </table>
+
+  <iframe id="upazilaViewer" src=""></iframe>
+
+  <script>
+    function loadUpazila(filename) {
+      document.getElementById("upazilaViewer").src = filename;
+    }
+  </script>
+
+</body>
+</html>
